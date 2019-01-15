@@ -7,7 +7,6 @@ def jogo():
     print("********************************")
 
     num_secreto = round(random.randrange(0, 101))
-    print(num_secreto)
     total_de_tentativas = 0
     rodada = 1
     pontos = 1000
