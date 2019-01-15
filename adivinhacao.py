@@ -7,6 +7,7 @@ def jogo():
     print("********************************")
 
     num_secreto = round(random.randrange(0, 101))
+    print(num_secreto)
     total_de_tentativas = 0
     rodada = 1
     pontos = 1000
@@ -45,10 +46,10 @@ def jogo():
                 print("Você errou! Tente um numero menor.")
             elif menor:
                 print("Você errou! Tente um numero maior.")
-        print("Final do jogo.")
-        print("O numéro secreto era {}".format(num_secreto))
-        pontos_perdidos = abs(num_secreto - chute)
-        pontos = pontos - pontos_perdidos
+
+    print("Final do jogo.")
+    pontos_perdidos = abs(num_secreto - chute)
+    pontos = pontos - pontos_perdidos
 
 
 if __name__ == "__main__":
